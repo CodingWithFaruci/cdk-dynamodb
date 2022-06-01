@@ -1,15 +1,16 @@
-# AWS CDK TypeScript Bootstrap
+# AWS CDK TypeScript DynamoDB
 
-This repository is a template for bootstrapping new AWS CDK TypeScript projects.
-By running the GitHub Actions workflow a new repository will be created containing configuration for Jest, ESLint and Webpack.
-Additonally it will contain a GitHub Actions CDK deployment pipeline using the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in this repository.
-
-For usage run the create workflow and enter new stackname.
+This repository contains a DynamoDB table encrypted with a KMS key.
+The table uses a partition and sort key, additionally a secondy index is created also with a partition and sort key.
 
 ## Useful commands
 
-* `npm run build`   compile typescript to js
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+| Command  | Description    |
+|----------|----------------|
+|`npm run build`|compile typescript to js|
+|`npm run test`|perform the jest unit tests|
+|`npm run lint`|perform static analyses on code|
+|`cdk deploy`| deploy this stack to your default AWS account/region|
+|`cdk diff`|compare deployed stack with current state|
+|`cdk synth`|emits the synthesized CloudFormation template|
+  
