@@ -10,7 +10,7 @@ The table uses a partition and sort key, additionally a secondy index is created
 |`npm run build`|compile typescript to js|
 |`npm run test`|perform the jest unit tests|
 |`npm run lint`|perform static analyses on code|
-|`cdk deploy`| deploy this stack to your default AWS account/region|
+|`cdk bootstrap`|bootstrap aws for cdk on first time using cdk|
 |`cdk diff`|compare deployed stack with current state|
 |`cdk synth`|emits the synthesized CloudFormation template|
-  
+|`cdk deploy`| deploy this stack to your default AWS account/region|
